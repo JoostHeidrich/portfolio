@@ -1,0 +1,19 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: #141d2f;
+  div {
+    gap: 29px;
+    margin-right: 100px;
+    font-size: 23px;
+  }
+
+  h1 {
+    margin-left: 100px;
+    width: 150px;
+    height: 35.025px;
+    font-size: 50px;
+  }
+}
