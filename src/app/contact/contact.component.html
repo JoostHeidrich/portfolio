@@ -1,1 +1,84 @@
-<p>contact works!</p>
+<div class="header">
+  <div class="spacer"></div>
+  <h1>Contact</h1>
+</div>
+
+<div class="contact">
+  <div>
+    <h2>Got a problem to solve?</h2>
+    <p>
+      Contact me through this form, I am interested in hearing from you, knowing
+      your ideas and contributing to your projects with my work.
+    </p>
+    <div>
+      <p>Need a Frontend developer?</p>
+      <h3>Contact me!</h3>
+    </div>
+  </div>
+
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <div class="nameContainer">
+      <input
+        #name="ngModel"
+        [(ngModel)]="contactData.name"
+        class="name"
+        required=""
+        minlength="3"
+        placeholder="Your name"
+        formcontrolname="nameForm"
+        type="text"
+        name="name"
+      />
+      @if(!name.valid && name.touched){
+      <img src="/assets/img/objects/input-red.png" />
+      } @if(name.valid){
+      <img src="/assets/img/objects/icon-successfull.png" />
+      }
+    </div>
+    <div>Please enter a valid name</div>
+    <!---->
+    <div class="emailContainer">
+      <input
+        #email="ngModel"
+        [(ngModel)]="contactData.email"
+        class="email"
+        placeholder="Your email"
+        formcontrolname="emailForm"
+        required=""
+        type="email"
+        name="email"
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+      />
+      @if(!email.valid && email.touched){
+      <img src="/assets/img/objects/input-red.png" />
+      } @if(email.valid){
+      <img src="/assets/img/objects/icon-successfull.png" />
+      }
+    </div>
+    <div>Please enter a valid email address</div>
+
+    <div class="messageContainer">
+      <textarea
+        #message="ngModel"
+        [(ngModel)]="contactData.message"
+        floatLabel="never"
+        class="message"
+        required=""
+        minlength="5"
+        placeholder="Your message"
+        name="message"
+      ></textarea>
+
+      @if(!message.valid && message.touched){
+      <img src="/assets/img/objects/input-red.png" />
+      } @if(message.valid){
+      <img src="/assets/img/objects/icon-successfull.png" />
+      }
+    </div>
+
+    <div>message is required</div>
+
+    <button type="submit">Send message :&#41;</button>
+    <span>Your message has been successfully sent.</span>
+  </form>
+</div>

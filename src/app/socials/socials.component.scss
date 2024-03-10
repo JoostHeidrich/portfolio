@@ -1,0 +1,55 @@
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 150px;
+  background-color: #141d2f;
+  gap: 42px;
+  svg {
+    position: relative;
+    z-index: 10 !important;
+  }
+  a {
+    position: relative;
+    z-index: 10 !important;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+  }
+}
+
+.spacer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10 !important;
+  background-color: #4b47ff;
+  width: 100px;
+  height: 4px;
+}
+
+.scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  rotate: 90deg;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  right: 0px;
+  top: 700px;
+  svg {
+    rotate: 270deg;
+  }
+}
+
+@media (max-width: 1080px) {
+  .scroll {
+    display: none;
+  }
+  .email {
+    display: none;
+  }
+}

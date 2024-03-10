@@ -1,0 +1,140 @@
+div {
+  color: white;
+}
+
+h2 {
+  font-size: 90px;
+}
+
+.leftSpacer {
+  width: 100px;
+  height: 4px;
+  background-color: #4b47ff;
+}
+
+.rightSpacer {
+  width: 500px;
+  height: 4px;
+  background-color: #4b47ff;
+}
+
+.title {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  p {
+    font-size: 18px;
+    position: absolute;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  p {
+    margin-left: 100px;
+  }
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 100px;
+  margin-left: 100px;
+
+  img {
+    width: 50%;
+  }
+  h2 {
+    color: #4b47ff;
+    font-size: 32px;
+  }
+}
+
+.description {
+  width: 620px;
+}
+
+.projectsButtons {
+  display: flex;
+  gap: 86px;
+}
+
+.testButton {
+  color: white;
+  padding: 15px 30px;
+  gap: 10px;
+  border-radius: 10px;
+  background: #4b47ff;
+  border: none;
+}
+
+.gitButton {
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid #00bee8;
+  gap: 10px;
+  background-color: #141d2f;
+}
+
+.languages {
+  color: #00bee8;
+  font-size: 23px;
+}
+
+@media (max-width: 950px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    img {
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  .Swiched {
+    flex-direction: column-reverse;
+  }
+
+  .description {
+    position: relative;
+    top: -160px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .projectsButtons {
+    justify-content: space-between;
+  }
+}
+
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

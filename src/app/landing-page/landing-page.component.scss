@@ -7,84 +7,189 @@ div {
 
 .backgroundIMG {
   margin-top: 300px;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   width: 100%;
   margin-left: 0;
   background-color: #141d2f;
 }
 
+.mainContent {
+  height: 550px;
+}
+
 .content {
   display: flex;
   align-items: center;
-  margin-top: 200px;
-
+  margin-top: 220px;
+  background-color: rgba($color: #000000, $alpha: 0);
+  margin-right: 100px;
   h2 {
     background-color: rgba($color: #000000, $alpha: 0);
-    font-size: 100px;
+    font-size: 90px;
     margin: 0;
   }
 
-  div {
+  .title {
     display: flex;
     flex-direction: column;
-    font-size: 58px;
+    position: relative;
+    font-size: 50px;
     margin: 0;
     background-color: rgba($color: #000000, $alpha: 0);
     align-items: center;
+    justify-content: start;
+    left: -35px;
+    text-align: end;
     p {
       color: #4b47ff;
       margin: 0;
+      font-size: 65px;
     }
   }
 }
 
 .character {
   margin-left: 100px;
-  height: 800px;
-  z-index: 2;
-  margin-top: 100px;
+  height: 650px;
+  z-index: 3;
+  margin-top: 150px;
 }
 
 .rotatet {
   display: flex;
-  align-items: center;
+  align-items: end;
+
   margin: 0 0 0 0 !important;
   font-size: 78px;
-  width: 152px;
-  height: 63px;
   rotate: 270deg;
+  white-space: nowrap;
 }
 
 .shadow {
+  position: absolute;
   opacity: 0.8;
   height: 800px;
-  position: absolute;
-  z-index: 1;
+  z-index: 2;
   width: 900px;
-  margin-top: 200px;
-  margin-left: 50px;
+  left: -100px;
+  margin-top: 100px;
 }
 
 button {
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #00bee8;
   color: white;
   width: 165px;
   height: 58px;
-  top: 513px;
-  left: 892px;
   padding: 15px, 30px, 15px, 30px;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .contentContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: end;
+  text-align: start;
   background-color: rgba($color: #000000, $alpha: 0);
   z-index: 2;
   gap: 0;
-  margin-right: 100px;
-  margin-bottom: 400px;
+}
+
+@media (max-width: 1650px) {
+  h2 {
+    font-size: 75px !important;
+  }
+
+  .title {
+    p {
+      font-size: 55px !important;
+    }
+  }
+
+  .rotatet {
+    font-size: 65px !important;
+  }
+
+  .character {
+    margin-top: 200px;
+    height: 550px;
+  }
+
+  .mainContent {
+    height: 550px;
+  }
+}
+
+@media (max-width: 1400px) {
+  h2 {
+    font-size: 60px !important;
+  }
+
+  .title {
+    p {
+      font-size: 40px !important;
+    }
+  }
+
+  .rotatet {
+    font-size: 55px !important;
+  }
+
+  .character {
+    margin-top: 200px;
+    height: 550px;
+  }
+
+  .mainContent {
+    height: 550px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .content {
+    h2 {
+      font-size: 50px !important;
+    }
+
+    .title {
+      p {
+        font-size: 32px !important;
+      }
+    }
+  }
+  .rotatet {
+    font-size: 50px !important;
+  }
+  .character {
+    margin-top: 200px;
+    height: 450px;
+  }
+  .mainContent {
+    height: 500px;
+  }
+}
+@media (max-width: 1080px) {
+  .allContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .character {
+    margin-left: 0;
+  }
+  .mainContent {
+    margin-top: 50px;
+    margin-right: 0;
+    height: 250px;
+  }
+  .content {
+    margin-top: 0;
+  }
+
+  .contentContainer {
+    height: 250px;
+  }
 }
