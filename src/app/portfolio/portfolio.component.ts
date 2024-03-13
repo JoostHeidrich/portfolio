@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import AOS from 'aos';
-import { first } from 'rxjs';
 
 @Component({
   selector: 'app-portfolio',

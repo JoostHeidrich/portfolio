@@ -24,3 +24,15 @@ div {
   z-index: 100;
   border-bottom: 2px solid #00bee8;
 }
+
+@media (max-width: 700px) {
+  div {
+    div {
+      margin-right: 25px;
+    }
+  }
+
+  h1 {
+    margin-left: 25px !important;
+  }
+}
