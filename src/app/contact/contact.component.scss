@@ -86,7 +86,7 @@ form {
 }
 
 .nameContainer:hover {
-  border: solid 1px #00bee8 !important;
+  border: solid 1px #00bee8;
 }
 
 .email {
@@ -113,7 +113,7 @@ form {
 }
 
 .emailContainer:hover {
-  border: solid 1px #00bee8 !important;
+  border: solid 1px #00bee8;
 }
 
 .message {
@@ -142,15 +142,15 @@ form {
 }
 
 .redBorder {
-  border: 1px solid red;
+  border: 1px solid red !important;
 }
 
 .greenBorder {
-  border: 1px solid green;
+  border: 1px solid green !important;
 }
 
 .message:hover {
-  border: solid 1px #00bee8 !important;
+  border: solid 1px #00bee8;
 }
 
 input:-webkit-autofill,
@@ -171,6 +171,73 @@ button:focus {
 .required {
   color: red;
   font-size: 14px;
+}
+
+.checkbox {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .privacy {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    a {
+      display: flex;
+      align-items: center;
+      color: #4b47ff;
+    }
+  }
+  input {
+    margin-right: 6px;
+  }
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  appearance: none;
+  background-color: #141d2f;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  outline: 2px solid #00bee8;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  padding: 2px;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]::before {
+  background-color: #00bee8;
+  transform-origin: bottom left;
+  clip-path: polygon(10% 40%, 0 60%, 50% 90%, 100% 12%, 80% 0%, 40% 60%);
+  height: 15px;
+  width: 15px;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+.disabled{
+  background-color: grey;
 }
 @media (max-width: 1100px) {
 }

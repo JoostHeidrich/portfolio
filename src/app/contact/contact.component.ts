@@ -17,8 +17,9 @@ export class ContactComponent {
     email: '',
     message: '',
   };
-
-  mailTest = true;
+  checkboxChecked: boolean = false;
+  sendFailed = false;
+  messageSend = false;
 
   post = {
     endPoint: 'https://joostheidrich.de/sendMail.php',
@@ -32,8 +33,11 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    console.log('submite');
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    this.messageSend = false;
+    if (ngForm.submitted && ngForm.form.valid && this.checkboxChecked) {
+      console.log('send');
+      this.messageSend = true;
+      this.sendFailed = false;
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -43,10 +47,12 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => this.mailSend(),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
+    } else {
+      this.sendFailed = true;
     }
   }
+
+  mailSend() {}
 }
