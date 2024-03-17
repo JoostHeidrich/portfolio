@@ -6,23 +6,102 @@ div {
   background-color: #141d2f;
   div {
     gap: 29px;
-    margin-right: 100px;
     font-size: 23px;
   }
 
-  h1 {
+  .h1 {
     margin-left: 100px;
     width: 150px;
     font-size: 50px;
   }
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #00bee8;
+}
+
 .content {
   height: 100px;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   z-index: 100;
   border-bottom: 2px solid #00bee8;
+}
+
+.desktopMenu {
+  margin-right: 100px;
+  img{
+    height: 40px;
+  }
+}
+
+.language{
+  width: 70px;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.navscreen {
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: #141d2f, $alpha: 0.8) !important;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: #00bee8;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
 @media (max-width: 700px) {
@@ -32,7 +111,18 @@ div {
     }
   }
 
-  h1 {
+  .h1 {
     margin-left: 25px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .desktopMenu {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    margin-right: 25px;
   }
 }

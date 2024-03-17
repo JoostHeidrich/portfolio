@@ -22,4 +22,5 @@ import { PortfolioComponent } from '../portfolio/portfolio.component';
     PortfolioComponent,
   ],
 })
-export class MainContentComponent {}
+export class MainContentComponent {
+}

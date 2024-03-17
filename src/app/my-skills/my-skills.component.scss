@@ -5,12 +5,13 @@ div {
   background-color: #141d2f;
 }
 
-button {
+a {
   padding: 15px 30px;
   border-radius: 10px;
   background-color: #00bee8;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  width: 200px;
+  text-decoration: none;
+  color: white;
 }
 
 .mobileButton {
@@ -25,7 +26,6 @@ button {
   margin-left: 100px;
   display: grid;
   row-gap: 50px;
-  width: 100%;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -42,7 +42,6 @@ button {
   gap: 32px;
   align-items: center;
   flex-direction: column;
-  margin-right: 100px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
   div {
@@ -59,7 +58,6 @@ button {
 }
 
 .spacer {
-  position: absolute;
   background-color: #4b47ff;
   height: 4px;
   width: 80px;
@@ -72,15 +70,40 @@ button {
   position: absolute;
   left: -220px;
   margin-top: 150px;
+  overflow: hidden;
+}
+
+.skillTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  h2 {
+    width: 100%;
+  }
+}
+
+.contentContainer {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 @media (max-width: 1250px) {
   .content {
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
 
   .skills {
     margin-left: 50px;
+    p{
+      margin-right: 100px;
+    }
+    h2{
+      font-size: 70px;
+    }
   }
 }
 
@@ -98,7 +121,8 @@ button {
     margin-left: 0px;
     align-items: end;
     p {
-      margin-left: 100px;
+      margin-left: 25px;
+      margin-right: 25px;
     }
   }
 
@@ -108,11 +132,20 @@ button {
     align-items: center;
     width: 100%;
   }
-}
-@media (max-width: 550px) {
-.skills{
-  h2{
-    font-size: 45px;
+
+  .content {
+    margin-left: 0;
+    width: 100%;
   }
 }
+@media (max-width: 550px) {
+  .skills {
+    h2 {
+      font-size: 45px;
+    }
+  }
+  .shadow{
+    width: 420px;
+    margin-top: 0px;
+  }
 }

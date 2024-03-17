@@ -94,6 +94,13 @@ h2 {
   font-size: 23px;
 }
 
+.projectsButtons {
+  button:hover {
+    background-color: #00bee8;
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 950px) {
   .project {
     display: flex;
@@ -168,7 +175,7 @@ h2 {
 }
 
 @media (max-width: 550px) {
-  .projectlist{
+  .projectlist {
     margin-top: 30px;
   }
   h2 {

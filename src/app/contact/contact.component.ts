@@ -35,7 +35,6 @@ export class ContactComponent {
   onSubmit(ngForm: NgForm) {
     this.messageSend = false;
     if (ngForm.submitted && ngForm.form.valid && this.checkboxChecked) {
-      console.log('send');
       this.messageSend = true;
       this.sendFailed = false;
       this.http
@@ -43,6 +42,7 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            this.mailSend();
           },
           error: (error) => {
             console.error(error);
@@ -54,5 +54,11 @@ export class ContactComponent {
     }
   }
 
-  mailSend() {}
+  mailSend() {
+    let content = document.getElementById('messageSend');
+    content?.classList.remove('d-none');
+    setTimeout(() => {
+      content?.classList.add('d-none');
+    }, 1000);
+  }
 }
