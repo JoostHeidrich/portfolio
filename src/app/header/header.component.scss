@@ -19,6 +19,17 @@ div {
 a {
   text-decoration: none;
   color: white;
+  font-size: 16px;
+}
+
+.allContentContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  border-bottom: 2px solid #00bee8;
+  position: fixed;
+  z-index: 1000;
 }
 
 a:hover {
@@ -26,22 +37,26 @@ a:hover {
 }
 
 .content {
-  height: 100px;
+  max-width: 1920px;
   width: 100%;
   position: fixed;
   z-index: 100;
-  border-bottom: 2px solid #00bee8;
 }
 
 .desktopMenu {
   margin-right: 100px;
-  img{
+  img {
     height: 40px;
   }
 }
 
-.language{
+.language {
+  img {
+    max-width: 70px;
+    max-height: 50px;
+  }
   width: 70px;
+  max-height: 50px;
 }
 
 .d-none {
@@ -116,7 +131,7 @@ a:hover {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .desktopMenu {
     display: none;
   }
@@ -125,4 +140,7 @@ a:hover {
     display: flex;
     margin-right: 25px;
   }
+}
+
+@media (max-width: 900px) {
 }

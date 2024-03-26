@@ -1,0 +1,298 @@
+// @media (max-width: 4070px) {
+//   form {
+//     width: 50%;
+//     div {
+//       width: 100%;
+//       font-size: 50px;
+//     }
+//     ::placeholder {
+//       font-size: 50px;
+//     }
+//     input {
+//       font-size: 50px;
+//     }
+//     img {
+//       width: 100px;
+//       height: 100px;
+//     }
+//   }
+
+//   .nameContainer {
+//     height: 200px;
+//   }
+//   .emailContainer {
+//     height: 200px;
+//   }
+//   .messageContainer {
+//     height: 600px;
+//     textarea {
+//       height: 600px;
+//       font-size: 50px;
+//     }
+//   }
+//   .checkbox {
+//     input {
+//       width: 100px;
+//       height: 100px;
+//     }
+//   }
+//   input[type="checkbox"]::before {
+//     background-color: #00bee8;
+//     transform-origin: bottom left;
+//     clip-path: polygon(10% 40%, 0 60%, 50% 90%, 100% 12%, 80% 0%, 40% 60%);
+//     height: 80px;
+//     width: 80px;
+//   }
+
+//   .contact {
+//     p {
+//       font-size: 35px;
+//     }
+//     h3 {
+//       font-size: 50px;
+//     }
+//     h2 {
+//       font-size: 55px;
+//     }
+//   }
+//   .contactTest {
+//     width: 50%;
+//   }
+//   button {
+//     font-size: 60px;
+//     padding: 30px 60px;
+//   }
+// }
+
+// @media (max-width: 3600px) {
+// }
+
+// @media (max-width: 3000px) {
+//   form {
+//     width: 60%;
+//     div {
+//       width: 100%;
+//       font-size: 30px;
+//     }
+//     ::placeholder {
+//       font-size: 30px;
+//     }
+//     input {
+//       font-size: 30px;
+//     }
+//     img {
+//       width: 80px;
+//       height: 80px;
+//     }
+//   }
+
+//   .nameContainer {
+//     height: 150px;
+//   }
+//   .emailContainer {
+//     height: 150px;
+//   }
+//   .messageContainer {
+//     height: 500px;
+//     textarea {
+//       height: 500px;
+//       font-size: 50px;
+//     }
+//   }
+//   .checkbox {
+//     input {
+//       width: 80px;
+//       height: 80px;
+//     }
+//   }
+//   input[type="checkbox"]::before {
+//     height: 60px;
+//     width: 60px;
+//   }
+
+//   .contactTest {
+//     width: 30%;
+//   }
+//   button {
+//     font-size: 40px;
+//     padding: 20px 20px;
+//   }
+// }
+
+// @media (max-width: 2600px) {
+// }
+
+// @media (max-width: 2200px) {
+//   form {
+//     width: 60%;
+//     div {
+//       width: 100%;
+//       font-size: 20px;
+//     }
+//     ::placeholder {
+//       font-size: 20px;
+//     }
+//     input {
+//       font-size: 20px;
+//     }
+//     img {
+//       width: 30px;
+//       height: 30px;
+//     }
+//   }
+
+//   .nameContainer {
+//     height: 100px;
+//   }
+//   .emailContainer {
+//     height: 100px;
+//   }
+//   .messageContainer {
+//     height: 400px;
+//     textarea {
+//       height: 400px;
+//       font-size: 20px;
+//     }
+//   }
+//   .checkbox {
+//     input {
+//       width: 60px;
+//       height: 60px;
+//     }
+//   }
+//   input[type="checkbox"]::before {
+//     height: 40px;
+//     width: 40px;
+//   }
+
+//   .contactTest {
+//     width: 30%;
+//   }
+//   button {
+//     font-size: 30px;
+//     padding: 20px 20px;
+//   }
+//   .contact {
+//     p {
+//       font-size: 20px;
+//     }
+//     h3 {
+//       font-size: 30px;
+//     }
+//     h2 {
+//       font-size: 35px;
+//     }
+//   }
+// }
+
+form {
+  width: 60%;
+  div {
+    width: 100%;
+    font-size: 20px;
+  }
+  ::placeholder {
+    font-size: 20px;
+  }
+  input {
+    font-size: 20px;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.nameContainer {
+  height: 100px;
+}
+.emailContainer {
+  height: 100px;
+}
+.messageContainer {
+  height: 400px;
+  textarea {
+    height: 400px;
+    font-size: 20px;
+  }
+}
+.checkbox {
+  input {
+    width: 60px;
+    height: 60px;
+  }
+}
+input[type="checkbox"]::before {
+  height: 40px;
+  width: 40px;
+}
+
+.contactTest {
+  width: 30%;
+}
+button {
+  font-size: 30px;
+  padding: 20px 20px;
+}
+.contact {
+  p {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1655px) {
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1250px) {
+}
+
+@media (max-width: 1080px) {
+  .contact {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .contactTest {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+    div {
+      width: 100%;
+      font-size: 50px;
+    }
+  }
+
+  .contact {
+    align-items: center;
+    flex-direction: column;
+  }
+  form {
+    div {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 45px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+}
+
+@media (max-width: 400px) {
+}

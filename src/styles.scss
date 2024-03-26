@@ -8,6 +8,26 @@ body {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141d2f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #141d2f;
+  border: solid 1px #00bee8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0099cc;
+}
+
 /* poppins-300 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

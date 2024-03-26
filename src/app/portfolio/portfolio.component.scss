@@ -2,18 +2,34 @@ div {
   color: white;
 }
 
+.content {
+  padding-top: 10vh;
+  max-width: 1920px;
+}
+
+.allContentContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.projectlist {
+  position: relative;
+  z-index: 4;
+}
+
 h2 {
   font-size: 90px;
 }
 
 .leftSpacer {
-  width: 100px;
+  width: 300px;
   height: 4px;
   background-color: #4b47ff;
 }
 
 .rightSpacer {
-  width: 500px;
+  width: 700px;
   height: 4px;
   background-color: #4b47ff;
 }
@@ -23,22 +39,29 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: end;
-  p {
-    font-size: 18px;
-    position: absolute;
-  }
 }
 
 .titleContainer {
   display: flex;
   flex-direction: column;
+}
+
+.titleDescription {
+  display: flex;
+  align-items: center;
   justify-content: end;
+  font-size: 60px;
+  margin-right: 100px;
+  text-align: center;
+  p {
+    width: 2000px;
+  }
 }
 
 .text {
   display: flex;
-  justify-content: center;
   align-items: end;
+  flex-direction: column;
   p {
     margin-left: 100px;
   }
@@ -51,19 +74,14 @@ h2 {
   align-items: center;
   margin-right: 100px;
   margin-left: 100px;
-  height: 400px;
-
+  gap: 20%;
   img {
-    width: 50%;
+    height: 50vh;
   }
   h2 {
     color: #4b47ff;
     font-size: 32px;
   }
-}
-
-.description {
-  width: 620px;
 }
 
 .projectsButtons {
@@ -78,6 +96,7 @@ h2 {
   border-radius: 10px;
   background: #4b47ff;
   border: none;
+  text-decoration: none;
 }
 
 .gitButton {
@@ -87,6 +106,7 @@ h2 {
   border: 1px solid #00bee8;
   gap: 10px;
   background-color: #141d2f;
+  text-decoration: none;
 }
 
 .languages {
@@ -95,105 +115,43 @@ h2 {
 }
 
 .projectsButtons {
-  button:hover {
+  a:hover {
     background-color: #00bee8;
     cursor: pointer;
   }
 }
 
-@media (max-width: 950px) {
-  .project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 0;
+.title {
+  h2 {
+    font-size: 250px;
+  }
+  p {
+    font-size: 100px;
+  }
+}
+
+.project {
+  margin-top: 20px;
+  img {
     height: 900px;
-    img {
-      width: 80%;
-      position: relative;
-    }
-  }
-
-  .Swiched {
-    flex-direction: column-reverse;
-  }
-
-  .description {
-    position: relative;
-    margin-left: 25px;
-    margin-right: 25px;
-    width: auto !important;
-  }
-
-  .projectsButtons {
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 1100px) {
-  .project {
-    h2 {
-      font-size: 25px;
-    }
-    p {
-      font-size: 16px;
-    }
-  }
-  .languages {
-    font-size: 20px !important;
-  }
-}
-
-@media (max-width: 850px) {
-  .project {
-    height: 800px;
-  }
-}
-
-@media (max-width: 750px) {
-  .project {
-    height: 750px;
-  }
-}
-
-@media (max-width: 650px) {
-  .project {
-    height: 680px;
-  }
-}
-
-@media (max-width: 600px) {
-  .text {
-    p {
-      right: 25px;
-      left: 25px;
-      margin: 0;
-    }
-  }
-}
-
-@media (max-width: 550px) {
-  .projectlist {
-    margin-top: 30px;
   }
   h2 {
-    font-size: 45px;
+    font-size: 80px;
   }
-
-  .text {
-    p {
-      right: 25px;
-      left: 25px;
-      margin: 0;
-      height: 40px;
-    }
+  p {
+    font-size: 50px;
   }
 }
 
-@media (max-width: 450px) {
-  .project {
-    height: 600px;
-  }
+.testButton {
+  border-radius: 20px;
+  font-size: 60px;
+  padding: 30px 60px;
+}
+
+.gitButton {
+  color: white;
+  padding: 30px 60px;
+  border-radius: 20px;
+  font-size: 60px;
 }

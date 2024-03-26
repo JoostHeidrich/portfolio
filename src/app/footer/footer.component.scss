@@ -3,13 +3,13 @@ div {
 }
 
 .content {
-  border-top: solid 2px#00BEE8;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 32px 100px 32px 100px;
-  margin-top: 100px;
   height: 150px;
+  max-width: 1920px;
+  width: 100%;
 }
 
 .socials {
@@ -64,4 +64,13 @@ svg:hover {
   .socials {
     padding-bottom: 25px;
   }
+}
+
+.allContentContainer {
+  border-top: solid 2px#00BEE8;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
 }

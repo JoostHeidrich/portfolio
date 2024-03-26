@@ -1,18 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import AOS from 'aos';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
   imports: [],
   templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.scss',
+  styleUrls: ['./portfolio.component.scss', './portfolio.media.component.scss'],
 })
-export class PortfolioComponent {
-  constructor() {}
-  ngOnInit() {
+export class PortfolioComponent implements OnInit {
+  language: string = '';
+
+  constructor(public languageService: LanguageService) {}
+
+  ngOnInit(): void {
     AOS.init({
       duration: 2000,
+    });
+
+    this.languageService.language$.subscribe((currentLanguage) => {
+      this.language = currentLanguage;
     });
   }
 }

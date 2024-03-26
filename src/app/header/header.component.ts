@@ -1,5 +1,6 @@
-import { Component, Output, input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AppComponent } from '../app.component';
+import { LanguageService } from '../language.service';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -7,18 +8,15 @@ import { AppComponent } from '../app.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {
-  constructor(private appComponent: AppComponent) {}
-  language = this.appComponent.language;
+export class HeaderComponent implements OnInit {
+  language: string = '';
 
-  changeLanguage() {
-    if (this.language === 'english') {
-      this.language = 'german';
-    } else if (this.language === 'german') {
-      this.language = 'english';
-    }
-    this.appComponent.language = this.language;
-    console.log(this.appComponent.language);
+  constructor(public languageService: LanguageService) {}
+
+  ngOnInit(): void {
+    this.languageService.language$.subscribe((currentLanguage) => {
+      this.language = currentLanguage;
+    });
   }
 
   toggleMenu() {

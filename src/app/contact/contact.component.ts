@@ -1,15 +1,18 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
   imports: [FormsModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss',
+  styleUrls: ['./contact.component.scss', 'contact.media.component.scss'],
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+  constructor(public languageService: LanguageService) {}
+
   http = inject(HttpClient);
 
   contactData = {
@@ -59,6 +62,13 @@ export class ContactComponent {
     content?.classList.remove('d-none');
     setTimeout(() => {
       content?.classList.add('d-none');
-    }, 1000);
+    }, 2000);
+  }
+  language: string = '';
+
+  ngOnInit(): void {
+    this.languageService.language$.subscribe((currentLanguage) => {
+      this.language = currentLanguage;
+    });
   }
 }

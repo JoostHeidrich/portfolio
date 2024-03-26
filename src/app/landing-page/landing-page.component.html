@@ -1,23 +1,27 @@
 <img class="backgroundIMG" src="./assets/img/Vector.png" />
-<div class="allContent">
-  <div class="header">
-    <img class="character" src="./assets/img/character.png" />
+<div class="allContentContainer">
+  <div class="allContent">
+    <div class="header">
+      <img class="character" src="./assets/img/character.png" />
 
-    <img class="shadow" src="./assets/img/shadows/Group 2.png" />
-  </div>
+      <img class="character shadow" src="./assets/img/shadows/Group 2.png" />
+    </div>
 
-  <div class="mainContent">
-    <div class="contentContainer">
-      <div class="content">
-        <p class="rotatet">I am</p>
-        <div class="title">
-          <h2>Joost Heidrich</h2>
-          <p>FRONTEND DEVELOPER</p>
+    <div class="mainContent">
+      <div class="contentContainer">
+        <div class="content">
+          <p class="rotatet">I am</p>
+          <div class="title">
+            <h2>Joost Heidrich</h2>
+            <p>FRONTEND DEVELOPER</p>
+          </div>
         </div>
+        @if(this.language === 'english'){
+        <a href="#contact">Let´s talk!</a>
+        } @if(this.language === 'german'){
+        <a href="#contact">Schreib mir!</a>
+        }
       </div>
-      @if(language == 'german'){
-      <a href="#contact">Let´s talk!</a>
-      }
     </div>
   </div>
 </div>

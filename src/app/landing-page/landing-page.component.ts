@@ -1,15 +1,26 @@
-import { Component, input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from './../header/header.component';
 import { AppComponent } from '../app.component';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, AppComponent],
   templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.scss',
+  styleUrls: [
+    './landing-page.component.scss',
+    './landing-page.media.component.scss',
+  ],
 })
-export class LandingPageComponent {
-  constructor(private appComponent: AppComponent) {}
-  language = this.appComponent.language;
+export class LandingPageComponent implements OnInit {
+  language: string = '';
+
+  constructor(public languageService: LanguageService) {}
+
+  ngOnInit(): void {
+    this.languageService.language$.subscribe((currentLanguage) => {
+      this.language = currentLanguage;
+    });
+  }
 }

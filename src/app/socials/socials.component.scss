@@ -2,7 +2,6 @@ div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 150px;
   background-color: #141d2f;
   gap: 42px;
   svg {
@@ -14,8 +13,13 @@ div {
     z-index: 10 !important;
     text-decoration: none;
     color: white;
-    font-size: 23px;
   }
+}
+
+.allContentContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .spacer {
@@ -36,10 +40,9 @@ div {
   font-size: 35px;
   rotate: 90deg;
   color: white;
-  position: absolute;
   z-index: 4;
-  right: 0px;
-  top: 700px;
+  margin: 0;
+  background-color: rgba($color: #000000, $alpha: 0);
   svg {
     rotate: 270deg;
   }
@@ -60,11 +63,199 @@ svg:hover {
   width: 50px;
 }
 
+.content {
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.scroll {
+  font-size: 100px;
+  svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.email {
+  font-size: 60px;
+}
+
+div {
+  margin-top: 0 !important;
+}
+
+.scroll {
+  font-size: 80px;
+  svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+svg:hover {
+  cursor: pointer;
+  width: 80px !important;
+  height: 80px !important;
+}
+.svgContainer {
+  height: 80px;
+  width: 80px;
+  svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.email {
+  font-size: 45px;
+}
+
+@media (max-width: 2250px) {
+  .svgContainer {
+    height: 100px;
+    width: 100px;
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  svg:hover {
+    cursor: pointer;
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .email {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .allContentContainer {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 1855px) {
+  .scroll {
+    font-size: 60px;
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .svgContainer {
+    height: 80px;
+    width: 80px;
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  svg:hover {
+    cursor: pointer;
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .email {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .scroll {
+    font-size: 40px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 1256px) {
+  .scroll {
+    font-size: 35px;
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .svgContainer {
+    height: 80px;
+    width: 80px;
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  svg:hover {
+    cursor: pointer;
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .email {
+    font-size: 30px;
+  }
+  div{
+    gap: 25px;
+  }
+}
+
 @media (max-width: 1080px) {
   .scroll {
     display: none;
   }
+
   .email {
     display: none;
   }
+}
+@media (max-width: 650px) {
+  .svgContainer {
+    height: 60px;
+    width: 60px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  svg:hover {
+    cursor: pointer;
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .svgContainer {
+    height: 50px;
+    width: 50px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  svg:hover {
+    cursor: pointer;
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  div {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
 }
