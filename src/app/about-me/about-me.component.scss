@@ -68,7 +68,7 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100vh;
-overflow-x: clip;
+  overflow-x: clip;
 }
 
 .img {
@@ -92,83 +92,6 @@ h1 {
     font-size: 45px;
   }
 }
-
-// @media (max-width: 4070px) {
-//   .img {
-//     img {
-//       width: 1200px;
-//       height: 1200px;
-//     }
-//   }
-//   .spacer {
-//     width: 200px;
-//   }
-
-//   h1 {
-//     font-size: 80px;
-//     text-align: center;
-//   }
-
-//   .text {
-//     max-width: 2000px;
-//     p {
-//       font-size: 45px;
-//     }
-//   }
-// }
-
-// @media (max-width: 3600px) {
-// }
-
-// @media (max-width: 3000px) {
-//   .img {
-//     img {
-//       width: 1000px;
-//       height: 1000px;
-//     }
-//   }
-//   .spacer {
-//     width: 200px;
-//   }
-
-//   h1 {
-//     font-size: 70px;
-//     text-align: center;
-//   }
-
-//   .text {
-//     max-width: 2000px;
-//     p {
-//       font-size: 35px;
-//     }
-//   }
-// }
-
-// @media (max-width: 2600px) {
-// }
-
-// @media (max-width: 2200px) {
-//   .img {
-//     img {
-//       width: 700px;
-//       height: 700px;
-//     }
-//   }
-//   .spacer {
-//     width: 200px;
-//   }
-
-//   h1 {
-//     font-size: 60px;
-//     text-align: center;
-//   }
-
-//   .text {
-//     p {
-//       font-size: 20px;
-//     }
-//   }
-// }
 
 .img {
   img {

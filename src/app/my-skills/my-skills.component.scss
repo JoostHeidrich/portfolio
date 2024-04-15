@@ -58,7 +58,7 @@ a {
   h2 {
     margin: 0;
     white-space: now;
-    font-size: 90px;
+    font-size: 80px;
   }
   p {
     font-size: 16px;
@@ -120,10 +120,10 @@ svg {
   margin-left: 50px;
   p {
     margin-right: 100px;
-    font-size: 60px;
+    font-size: 16px;
   }
   h2 {
-    font-size: 160px;
+    font-size: 80px;
   }
 }
 .desktopButton {
@@ -147,10 +147,10 @@ svg {
   margin-left: 50px;
   p {
     margin-right: 100px;
-    font-size: 30px;
+    font-size: 16px;
   }
   h2 {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 .desktopButton {
@@ -173,16 +173,7 @@ svg {
       font-size: 20px;
     }
   }
-  .skills {
-    margin-left: 50px;
-    p {
-      margin-right: 100px;
-      font-size: 30px;
-    }
-    h2 {
-      font-size: 60px;
-    }
-  }
+
   .desktopButton {
     border-radius: 10px;
     margin-top: 20px;
@@ -194,16 +185,6 @@ svg {
   .content {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-  }
-
-  .skills {
-    margin-left: 50px;
-    p {
-      margin-right: 100px;
-    }
-    h2 {
-      font-size: 70px;
-    }
   }
 }
 
@@ -246,7 +227,10 @@ svg {
 @media (max-width: 650px) {
   .skills {
     h2 {
-      font-size: 45px;
+      font-size: 50px;
+    }
+    p {
+      font-size: 15px;
     }
   }
   .shadow {
@@ -262,6 +246,15 @@ svg {
   }
   .content {
     gap: 5px;
+  }
+
+  .skills {
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
   }
 }
 

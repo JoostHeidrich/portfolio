@@ -21,7 +21,6 @@ button {
   justify-content: center;
 }
 
-
 button:disabled {
   background-color: gray;
 }
@@ -32,7 +31,7 @@ textarea {
 
 h1 {
   margin-left: 50px;
-  font-size: 90px;
+  font-size: 60px;
 }
 
 .contact {
@@ -127,7 +126,8 @@ form {
   width: 100%;
   height: 200px;
   gap: 10px;
-  padding: 32px;
+  padding: 16px;
+  padding-right: 48px;
   border-radius: 10px;
   border: solid 1px #4b47ff;
   background: #141d2f;
@@ -177,11 +177,11 @@ button:focus {
 
 .required {
   color: red;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .checkbox {
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -194,6 +194,7 @@ button:focus {
   }
   input {
     margin-right: 6px;
+    font-size: 0px;
   }
 }
 
@@ -242,6 +243,10 @@ input[type="checkbox"]::before {
 
 .disabled {
   background-color: grey;
+}
+
+.submit:hover {
+  cursor: pointer;
 }
 
 .messageSend {
@@ -323,17 +328,6 @@ input[type="checkbox"]::before {
   width: 80px;
 }
 
-.contact {
-  p {
-    font-size: 35px;
-  }
-  h3 {
-    font-size: 50px;
-  }
-  h2 {
-    font-size: 55px;
-  }
-}
 .contactTest {
   width: 50%;
 }

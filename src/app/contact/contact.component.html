@@ -17,7 +17,7 @@
         @if(this.language === 'english'){
         <h2>Got a problem to solve?</h2>
         <p>
-          Contact me through this form, I am interested in hearing from you,
+          Contact me through this form. I am interested in hearing from you,
           knowing your ideas and contributing to your projects with my work.
         </p>
         <div>
@@ -186,6 +186,7 @@
           }
         </div>
         <button
+         class="submit"
           type="submit"
           [class.disabled]="
             !checkboxChecked || !message.valid || !email.valid || !name.valid

@@ -10,7 +10,7 @@ export class LanguageService {
   public language$;
 
   constructor() {
-    this.languageSubject = new BehaviorSubject<string>('english');
+    this.languageSubject = new BehaviorSubject<string>('german');
     this.language$ = this.languageSubject.asObservable();
   }
 

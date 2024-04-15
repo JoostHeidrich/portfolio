@@ -14,12 +14,11 @@ div {
 }
 
 .projectlist {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   position: relative;
   z-index: 4;
-}
-
-h2 {
-  font-size: 90px;
 }
 
 .leftSpacer {
@@ -50,10 +49,10 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: end;
-  font-size: 60px;
   margin-right: 100px;
   text-align: center;
   p {
+    font-size: 16px;
     width: 2000px;
   }
 }
@@ -123,10 +122,7 @@ h2 {
 
 .title {
   h2 {
-    font-size: 250px;
-  }
-  p {
-    font-size: 100px;
+    font-size: 60px;
   }
 }
 
@@ -136,10 +132,10 @@ h2 {
     height: 900px;
   }
   h2 {
-    font-size: 80px;
+    font-size: 60px;
   }
   p {
-    font-size: 50px;
+    font-size: 16px;
   }
 }
 
