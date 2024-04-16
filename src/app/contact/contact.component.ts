@@ -25,7 +25,7 @@ export class ContactComponent implements OnInit {
   messageSend = false;
 
   post = {
-    endPoint: 'https://joostheidrich.de/sendMail.php',
+    endPoint: 'https://portfolio.joostheidrich.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

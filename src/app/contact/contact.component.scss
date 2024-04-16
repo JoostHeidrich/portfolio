@@ -19,6 +19,25 @@ button {
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 2;
+position: relative;
+}
+
+.shadow {
+  position: absolute;
+  width: 100%;
+  margin-top: 300px;
+  max-width: 100%;
+  img {
+    position: relative;
+    width: 747.467px;
+    height: 902.789px;
+    flex-shrink: 0;
+    left: 0px;
+    opacity: 0.8;
+    max-width: 100%;
+    left: -200px;
+  }
 }
 
 button:disabled {
@@ -69,6 +88,10 @@ form {
   div {
     width: 617px;
   }
+}
+
+.checkboxInput {
+  margin: 0 !important;
 }
 
 .name {

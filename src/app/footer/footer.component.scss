@@ -10,6 +10,8 @@ div {
   height: 150px;
   max-width: 1920px;
   width: 100%;
+  background-color: #141d2f;
+  z-index: 2;
 }
 
 .socials {
@@ -72,5 +74,7 @@ svg:hover {
   display: flex;
   justify-content: center;
   margin-top: 100px;
-
+  background-color: #141d2f;
+  z-index: 3;
+  position: relative;
 }

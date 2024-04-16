@@ -2,7 +2,7 @@ form {
   width: 50%;
   div {
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
   }
   ::placeholder {
     font-size: 16px;
@@ -92,6 +92,9 @@ button {
       width: 100%;
     }
   }
+  .shadow {
+    margin-top: 500px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -105,7 +108,13 @@ button {
 }
 
 @media (max-width: 500px) {
+  .shadow {
+    margin-top: 600px;
+  }
 }
 
 @media (max-width: 400px) {
+  .shadow {
+    margin-top: 700px;
+  }
 }
